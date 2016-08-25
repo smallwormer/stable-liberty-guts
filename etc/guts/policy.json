@@ -1,0 +1,26 @@
+{
+    "context_is_admin": "role:admin",
+    "admin_or_owner":  "is_admin:True or project_id:%(project_id)s",
+    "default": "rule:admin_or_owner",
+
+    "admin_api": "is_admin:True",
+
+    "types:get_all_types": "is_admin:True",
+    "types:get_source_type": "is_admin:True",
+    "types:create": "",
+    "types:delete": "",
+
+    "sources:get_all_sources": "is_admin:True",
+    "sources:create": "",
+    "sources:delete": "",
+
+    "vms:fetch_vms": "is_admin:True",
+    "vms:get_all_vms": "is_admin:True",
+    "vms:vm_delete": "",
+    "vms:get_vm": "is_admin:True",
+
+    "migrations:get_all_migrations": "is_admin:True",
+    "migrations:get_migration": "is_admin:True",
+    "migrations:create": "",
+    "migrations:migration_delete": ""
+}
